@@ -26,6 +26,10 @@
     "test": "jest"
   },
 
+  "files": [
+    "src/numeric-input.vue"
+  ],
+
   "jest": {
     "verbose": true,
     "moduleFileExtensions": [
