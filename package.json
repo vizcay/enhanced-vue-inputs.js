@@ -1,0 +1,54 @@
+{
+  "name": "enhanced-vue-inputs.js",
+  "version": "0.1.0",
+  "description": "Enhanced Vue input components",
+  "author": "Pablo Vizcay",
+  "license": "MIT",
+  "private": false,
+
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "toformat": "^2.0.0"
+  },
+
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.30",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.9.0",
+    "vue": "^2.6.11",
+    "vue-jest": "^3.0.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+
+  "scripts": {
+    "test": "jest"
+  },
+
+  "jest": {
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
+  },
+
+  "babel": {
+    "presets": [
+      [ "env", { "modules": false } ]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [ "env", { "targets": { "node": "current" } } ]
+        ]
+      }
+    }
+  }
+}
