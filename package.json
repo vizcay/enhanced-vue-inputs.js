@@ -5,6 +5,11 @@
   "author": "Pablo Vizcay",
   "license": "MIT",
   "private": false,
+  "main": "src/index.js",
+
+  "files": [
+    "src/numeric-input.vue"
+  ],
 
   "dependencies": {
     "big.js": "^5.2.2",
@@ -25,10 +30,6 @@
   "scripts": {
     "test": "jest"
   },
-
-  "files": [
-    "src/numeric-input.vue"
-  ],
 
   "jest": {
     "verbose": true,
